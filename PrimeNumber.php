@@ -1,0 +1,1 @@
+<?php $prime_numbers = array(); $nbDisplay = 0; $counter = 2; while($nbDisplay<=50000){$square_root = sqrt($counter);$prime = TRUE;foreach($prime_numbers as $divisor){if($counter % $divisor == 0){$prime = FALSE;break;}if($divisor > $square_root){break;}}if($prime){$prime_numbers[] = $counter;echo $counter."\n";flush();ob_flush();$nbDisplay++;}$counter++;}
